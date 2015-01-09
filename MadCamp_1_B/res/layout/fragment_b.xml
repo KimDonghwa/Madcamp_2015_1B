@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true" >
+
+                <Button
+                    android:id="@+id/add"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="+"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/delete"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="만세야 안녕...☆" />
+
+            </LinearLayout>
+
+            <GridView
+                android:id="@+id/manseList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="60dp"
+                android:columnWidth="90dp"
+                android:numColumns="3"
+                android:stretchMode="columnWidth" >
+
+            </GridView>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/manseImage"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#F2000000"
+            android:scaleType="fitCenter"
+            android:src="@drawable/manse09"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+</RelativeLayout>
